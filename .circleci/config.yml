@@ -1,0 +1,15 @@
+version: 2.1
+
+orbs:
+  android: circleci/android@0.2.3
+
+jobs:
+  build:
+    executor: android/android
+
+    steps:
+      - checkout
+      - android/accept-licenses
+      - run:
+          command: ./gradlew check # Run lint and unit tests, but not emulator tests
+

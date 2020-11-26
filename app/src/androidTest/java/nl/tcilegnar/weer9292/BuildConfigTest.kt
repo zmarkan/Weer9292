@@ -33,4 +33,14 @@ abstract class BuildConfigTest : BaseInstrumentedTest() {
         // Assert
         assertTrue(actualApplicationId.contains(getContext().packageName))
     }
+
+    @Test
+    fun failingTest_provesThatOurTestsAreRunning() {
+        // Arrange
+
+        // Act
+
+        // Assert
+        assertTrue(false)
+    }
 }

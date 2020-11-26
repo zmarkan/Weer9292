@@ -3,6 +3,7 @@ package nl.tcilegnar.weer9292.model
 import nl.tcilegnar.weer9292.network.model.response.*
 import org.joda.time.DateTime
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 private const val CITY = "City"

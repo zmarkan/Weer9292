@@ -24,7 +24,7 @@ class RadarFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        radarViewModel.text.observe(this, Observer {
+        radarViewModel.text.observe(viewLifecycleOwner, Observer {
             text_radar.text = it
         })
     }
